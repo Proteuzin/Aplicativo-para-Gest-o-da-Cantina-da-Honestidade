@@ -73,7 +73,7 @@ Aplicativo web com:
 
 <!-- INSIRA A IMAGEM DO DIAGRAMA SQL AQUI -->
 ![Diagrama do Banco de Dados](img)
-<img src="" alt="Diagrama" width="80%">
+<img src="drawSQL-image-export-2026-08-11 (1).jpg" alt="Diagrama" width="80%">
 
 > *Diagrama de relacionamento entre as tabelas do sistema*
 
