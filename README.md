@@ -72,7 +72,8 @@ Aplicativo web com:
 ### Diagrama do Banco de Dados
 
 <!-- INSIRA A IMAGEM DO DIAGRAMA SQL AQUI -->
-![Diagrama do Banco de Dados](caminho/para/sua/imagem.png)
+![Diagrama do Banco de Dados](img)
+<img src="" alt="Diagrama" width="80%">
 
 > *Diagrama de relacionamento entre as tabelas do sistema*
 
