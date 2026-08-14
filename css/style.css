@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF3E0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.box_login {
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #FFB74D;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.user,
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#user,
+#password,
+#password2 {
+    border-radius: 10px;
+    background-color: rgb(233, 231, 231);
+    width: 200px;
+    padding: 10px;
+    border: none;
+    transition: 0.2s;
+}
+
+#password,
+#password2 {
+    margin-left: 35px;
+}
+
+label {
+    margin-bottom: 10px;
+    text-align: left;
+    margin-right: 162px;
+}
+
+#user:focus,
+#password:focus,
+#password:focus {
+    transform: translateY(-5px);
+}
+
+#user:hover,
+#password:hover,
+#password2:hover {
+    background-color: lightblue;
+}
+
+#button_password {
+    background-color: rgb(233, 231, 231);
+    width: 30px auto;
+}
+
+.button_password {
+    border-radius: 30px;
+}
+
+#button {
+    width: 200px;
+    border-radius: 20px;
+    line-height: 30px;
+    background-color: #EF6C00;
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#button_cadastro {
+    width: 200px;
+    border-radius: 20px;
+    line-height: 30px;
+    background-color: #EF6C00;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#button:hover,
+#button_cadastro:hover {
+    background-color: lightgreen;
+}
+
+a {
+    color: gray;
+    margin-top: 5px;
+}
