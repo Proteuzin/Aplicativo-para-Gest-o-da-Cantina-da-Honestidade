@@ -11,14 +11,12 @@ body {
 h1 {
     margin-bottom: 20px;
 }
-
 .box_login {
     background-color: #FFFFFF;
     text-align: center;
     border-radius: 20px;
     border: 2px solid #FFB74D;
 }
-
 .box {
     width: 500px;
     height: 500px;
@@ -28,7 +26,6 @@ h1 {
     align-items: center;
     border-radius: 10px;
 }
-
 .user,
 .password {
     display: flex;
@@ -36,7 +33,6 @@ h1 {
     align-items: center;
     margin-bottom: 10px;
 }
-
 #user,
 #password,
 #password2 {
@@ -47,39 +43,57 @@ h1 {
     border: none;
     transition: 0.2s;
 }
-
 #password,
 #password2 {
     margin-left: 35px;
 }
-
 label {
     margin-bottom: 10px;
     text-align: left;
     margin-right: 162px;
 }
-
-#user:focus,
-#password:focus,
-#password:focus {
+#user:focus {
     transform: translateY(-5px);
 }
-
+.senha-container:focus-within,
+.senhacontainer2:focus-within {
+    transform: translateY(-5px);
+}
 #user:hover,
 #password:hover,
 #password2:hover {
     background-color: lightblue;
 }
+.senha-container,
+.senhacontainer2 {
+    position: relative;
+    width: 220px;
+    transition: 0.2s;
+}
 
-#button_password {
-    background-color: rgb(233, 231, 231);
-    width: 30px auto;
+#password,
+#password2 {
+    margin-left: 0;
+    box-sizing: border-box;
+    width: 220px;
+    padding-right: 40px;
 }
 
 .button_password {
-    border-radius: 30px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
-
+.olho {
+    display: block;
+}
 #button {
     width: 200px;
     border-radius: 20px;
@@ -89,7 +103,6 @@ label {
     margin-top: 15px;
     font-size: 18px;
 }
-
 #button_cadastro {
     width: 200px;
     border-radius: 20px;
@@ -99,12 +112,10 @@ label {
     margin-top: 20px;
     font-size: 18px;
 }
-
 #button:hover,
 #button_cadastro:hover {
     background-color: lightgreen;
 }
-
 a {
     color: gray;
     margin-top: 5px;
