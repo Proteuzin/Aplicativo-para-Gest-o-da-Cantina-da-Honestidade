@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #FFF3E0;
+}
+
+
+.lado{
+    background-color:#2E7D32 ;
+   text-align: left;
+   margin-right: 1610px;
+   text-align: center;
+   height: 100vh;
+}
+
+.logo{
+    width: 220px;
+    height: 150px;
+}
