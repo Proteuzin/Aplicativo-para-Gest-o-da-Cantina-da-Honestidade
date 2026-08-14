@@ -64,3 +64,54 @@ body{
 .conteudo{
     display: flex;
 }
+.direita {
+    flex: 1px;
+}
+.pesquisa{
+    display: flex;
+    gap: 40px;
+}
+
+.pesquisa h3, h4{
+    color: #66BB6A;
+}
+
+.conteudoMeio{
+    background-color: #FFF3E0;
+    height: 100vh;
+}
+
+
+/*cards */
+.primeiro{
+    background-color: rgb(173, 173, 173);
+    width: 300px;
+    padding-bottom: 13px;
+    margin-left: 20px;
+    text-align: center;
+    padding-top: 13px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.cards .primeiro img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.texto{
+    
+    color: #3C2415;
+}
+.preco{
+    color: #e4c8a4;
+}
