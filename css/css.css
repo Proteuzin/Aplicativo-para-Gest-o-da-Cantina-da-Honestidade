@@ -2,7 +2,7 @@
 * {
     margin: 0px;
     padding: 0px;
-     box-sizing: border-box;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,23 +15,100 @@ body {
 .icons {
     margin-left: 50px;
     margin-top: 50px;
+    color: white;
+    margin-left: 60px;
 }
+
 
 .icons img {
     width: 24px;
     height: 24px;
 }
 
+
 .inicio {
     display: flex;
     gap: 20px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    margin-right: 60px;
+    padding-left: 10px;
+}
+
+.inicio:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: black;
+    transform: translateY(-10px);
 }
 
 .carteira {
     margin-top: 20px;
     display: flex;
     gap: 20px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    margin-right: 60px;
+    padding-left: 10px;
 }
+
+.carteira:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: black;
+    transform: translateY(-10px);
+}
+
+.Compras {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    margin-right: 60px;
+    padding-left: 10px;
+
+}
+
+.Compras:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: black;
+    transform: translateY(-10px);
+}
+
+.historico {
+
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    margin-right: 60px;
+    padding-left: 10px;
+}
+
+.historico:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: black;
+    transform: translateY(-10px);
+}
+
+.perfil {
+
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 7px;
+    transition: 0.3s ease;
+    margin-right: 60px;
+    padding-left: 10px;
+
+}
+
+.perfil:hover {
+    background-color: rgba(245, 245, 245, 0.548);
+    color: black;
+    transform: translateY(-10px);
+}
+
 
 .lado {
     width: 250px;
@@ -69,6 +146,7 @@ body {
     flex: 1px;
     height: 60px;
     padding-left: 20px;
+    border-radius: 10px;
 }
 
 
@@ -88,8 +166,11 @@ body {
     gap: 40px;
 }
 
-.pesquisa h3,
-h4 {
+.pesquisa h3 {
+    color: #66BB6A;
+}
+
+.pesquisa h4 {
     color: #66BB6A;
 }
 
@@ -126,6 +207,12 @@ h4 {
     padding: 13px;
     text-align: center;
     border-radius: 15px;
+    transition: 0.3s;
+}
+
+.DivCard:hover {
+    transform: translateY(-10px);
+    box-shadow: #2E7D32 0 0 10px;
 }
 
 .cards {
@@ -152,7 +239,7 @@ h1 {
 
 /* Área dos produtos */
 .conteudoMeio {
-    background-color: white;
+    background-color: #FFF3E0;
     margin-left: 30px;
     border-radius: 15px;
 }
@@ -187,11 +274,37 @@ h1 {
     width: 150px;
     height: 40px;
     border-radius: 10px;
+    background-color: #2E7D32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+
+.depositar:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.depositarTexto {
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.somaIcone {
+    font-size: 30px;
 }
 
 .VerExtrato {
     width: 150px;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.VerExtrato:hover {
+    background-color: #2E7D32;
+    color: white;
 }
 
 
