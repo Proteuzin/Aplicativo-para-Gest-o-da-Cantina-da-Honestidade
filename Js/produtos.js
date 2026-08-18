@@ -11,7 +11,7 @@ let preco = [
 ];
 
 let nome = [
-  "Nome",
+  "nome",
   "nome",
   "nome",
   "nome",

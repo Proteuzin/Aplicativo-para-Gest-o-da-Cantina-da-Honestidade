@@ -10,6 +10,9 @@ body {
     background-color: #FFF3E0;
 }
 
+img{
+    border-radius: 17px;
+}
 
 /* Menu lateral */
 .icons {
@@ -143,10 +146,13 @@ h1 {
 
 .texto {
     color: #3C2415;
+    margin-top: 5px;
 }
 
 .preco {
     color: #e4c8a4;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -231,4 +237,12 @@ h1 {
 .saldoUser h2 {
     color: #2E7D32;
     font-size: 40px;
+}
+.butcard{
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+}
+.butcard:hover{
+    color: #2E7D32;
 }
