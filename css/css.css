@@ -385,6 +385,10 @@ h1 {
 .meiocarrinho{
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 7px;
 }
 
 .botaoCarrinho{
@@ -409,3 +413,13 @@ h1 {
     transition: 0.3s;
 }
 
+.textoBaixoCarrinho{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.textoBaixoCarrinho h3{
+    color: #2E7D32;
+}
