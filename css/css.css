@@ -444,7 +444,11 @@ h1 {
 .txtCarrinho p {
     padding-top: 5px;
 }
-
+#butaocarteira,#botaocarrinho{
+    background-color: #2E7D32;
+    border: none;
+    font-size: 18px;
+}
 .meiocarrinho {
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;

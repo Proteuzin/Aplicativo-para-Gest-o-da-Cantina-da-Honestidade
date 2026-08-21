@@ -50,3 +50,24 @@ function card() {
 }
 
 card();
+function some_aparece(){
+  const botao = document.getElementById("butaocarteira")
+  const carteira = document.getElementById("saldo")
+  const botao2 = document.getElementById("botaocarrinho")
+  const carrinho = document.getElementById("carrinho")
+
+  botao.addEventListener("click",function(){
+    if (carteira.style.display === "none"){
+      carteira.style.display = "block"
+    }else {
+      carteira.style.display = "none"
+    }
+    botao2.addEventListener("click",function(){
+      if (carrinho.style.display === "none"){
+        carrinho.style.display = "block"
+      }else {
+        carrinho.style.display = "none"
+      }
+    })
+  })
+}
