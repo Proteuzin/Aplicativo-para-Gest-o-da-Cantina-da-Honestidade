@@ -124,3 +124,7 @@ input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
     display: none;
 }
+.confirma_login{
+    color: white;
+    text-decoration: none;
+}

@@ -11,7 +11,7 @@ body {
     max-height: 100vh;
 }
 
-img{
+img {
     border-radius: 17px;
 }
 
@@ -155,6 +155,19 @@ img{
 a{
     text-decoration: none;
 }
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    border-radius: 15px;
+}
+
+.butaosair {
+    margin-top: 10px;
+
+}
+.link_sair{
+    text-decoration: none;
+    color: #66BB6A;
+}
 
 /* Cabeçalho */
 .cima {
@@ -190,6 +203,40 @@ a{
 
 .pesquisa h4{
      color: #66BB6A;
+}
+.input_search{
+    border-radius: 20px;
+    width: 200px;
+    margin-top: px;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    outline: none;
+}
+.lupa{
+    position: absolute;
+    right: 8px;
+    top: 32%;
+    transform: translateY(-20%);
+    font-size: 20px;
+    z-index: 1;
+    color: #666;
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: none;
+}
+.lupa:hover{
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+.imglupa{
+    margin: 2px;
+}
+.inputPesquisa{
+    position: relative;
+    width: 200px;
 }
 
 /* Área principal */
@@ -393,12 +440,14 @@ h1 {
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;
 }
-.butcard{
+
+.butcard {
     border-radius: 20px;
     width: 100px;
     height: 25px;
 }
-.butcard:hover{
+
+.butcard:hover {
     color: #2E7D32;
     transform: translateY(-3px);
     transition: 0.3s;
