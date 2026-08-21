@@ -460,6 +460,17 @@ h1 {
     transform: translateY(-1px);
 }
 
+.textoBaixoCarrinho{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.textoBaixoCarrinho h3{
+    color: #2E7D32;
+}
+
 .butcard {
     border-radius: 20px;
     width: 100px;
