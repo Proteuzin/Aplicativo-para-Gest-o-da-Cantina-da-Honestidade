@@ -5,7 +5,7 @@
   <!-- Configurações da página -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../img/favicon.png">
+  <link rel="icon" href="../images/favicon.png">
   <title>Cantina da bondade</title>
 
   <!-- CSS -->
@@ -142,61 +142,89 @@
         </div>
 
 
-        <!-- Carteira -->
-        <div class="saldo" id="saldo">
+        <div class="direita" id="direita">
+          <!-- Carteira -->
+          <div class="saldo" id="saldo">
 
-          <!-- Parte de cima da carteira -->
-          <div class="cimaSaldo" id="cimaSaldo">
+            <!-- Parte de cima da carteira -->
+            <div class="cimaSaldo" id="cimaSaldo">
 
-            <!-- Textos do saldo -->
-            <div id="textosSaldo" class="textosSaldo">
+              <!-- Textos do saldo -->
+              <div id="textosSaldo" class="textosSaldo">
 
-              <!-- Nome da carteira -->
-              <div class="CarteiraDigital" id="CarteiraDigital">
-                <h2>Carteira Digital</h2>
+                <!-- Nome da carteira -->
+                <div class="CarteiraDigital" id="CarteiraDigital">
+                  <h2>Carteira Digital</h2>
+                </div>
+
+                <!-- Saldo do usuário -->
+                <div class="saldoUser" id="saldoUser">
+                  <h4>Saldo atual</h4>
+                  <h2>R$ 13</h2>
+                </div>
+
               </div>
 
-              <!-- Saldo do usuário -->
-              <div class="saldoUser" id="saldoUser">
-                <h4>Saldo atual</h4>
-                <h2>R$ 13</h2>
+
+              <!-- Ícone da carteira -->
+              <div class="IconeSaldoDIV" id="IconeSaldoDIV">
+
+                <img src="../images/carteira.png" alt="carteira" class="IconeSaldo" id="IconeSaldo" />
+
               </div>
 
             </div>
 
 
-            <!-- Ícone da carteira -->
-            <div class="IconeSaldoDIV" id="IconeSaldoDIV">
+            <!-- Espaço vazio -->
+            <div></div>
 
-              <img src="../images/carteira.png" alt="carteira" class="IconeSaldo" id="IconeSaldo" />
+
+            <!-- Botões -->
+            <div class="botoes" id="botoes">
+
+              <!-- Depositar -->
+              <button id="depositar" class="depositar">
+                <div class="somaIcone" id="somaIcone">+</div>
+                <div class="depositarTexto" id="depositarTexto">depositar</div>
+              </button>
+
+              <!-- Ver extrato -->
+              <button class="VerExtrato" id="VerExtrato">
+                Ver Extrato
+              </button>
 
             </div>
 
           </div>
 
+          <div class="carrinho" id="carrinho">
 
-          <!-- Espaço vazio -->
-          <div></div>
+            <div class="txtCarrinho" id="txtCarrinho">
+              <h2>Carrinho</h2>
+              <p>0 itens</p>
+            </div>
+            <div class="meiocarrinho" id="meiocarrinho">
+              <p>Seu carrinho esta vazio</p>
+              <small>
+                "Adicione um produto para começar."
+              </small>
+            </div>
+            <hr>
+            <div class="baixoCarrinho" id="baixoCarrinho">
+              <div class="textoBaixoCarrinho" id="textoBaixoCarriho">
+                <p>Total da compra</p>
+                <h3>R$ 13,13</h3>
+              </div>
+              <div class="botaoCarrinhoDIV" id="botaoCarrinhoDIV">
+                <button class="botaoCarrinho" id="botaoCarrinho">Finalizar compra</button>
+              </div>
+            </div>
 
-
-          <!-- Botões -->
-          <div class="botoes" id="botoes">
-
-            <!-- Depositar -->
-            <button id="depositar" class="depositar">
-              <div class="somaIcone" id="somaIcone">+</div>
-              <div class="depositarTexto" id="depositarTexto">depositar</div> 
-            </button>
-
-            <!-- Ver extrato -->
-            <button class="VerExtrato" id="VerExtrato">
-              Ver Extrato
-            </button>
 
           </div>
 
         </div>
-
       </div>
 
     </div>
