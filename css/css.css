@@ -118,7 +118,7 @@ img{
     width: 250px;
     background-color: #2E7D32;
     text-align: center;
-    height: 110vh;
+    height: 113vh;
 }
 
 
@@ -180,11 +180,13 @@ img{
     width: auto;
 }
 
-.pesquisa h3,
-h4 {
+.pesquisa h3{
     color: #66BB6A;
 }
 
+.pesquisa h4{
+     color: #66BB6A;
+}
 
 /* Área principal */
 .conteudoMeio {
