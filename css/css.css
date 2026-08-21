@@ -383,3 +383,15 @@ h1 {
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;
 }
+
+.botaoCarrinho{
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 230, 0);
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s ease;
+}
+.botaoCarrinho:hover{
+    transform: translateY(-1px);
+}
