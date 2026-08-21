@@ -154,7 +154,6 @@ img {
 
 a{
     text-decoration: none;
-}
     transform: translateY(-10px);
     transition: 0.3s ease;
     border-radius: 15px;
@@ -440,8 +439,10 @@ h1 {
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;
 }
-
+.butcard{
+}
 .butcard {
+>>>>>>> 11b0fd3ff301dccaf611e482958b1016b4a98736
     border-radius: 20px;
     width: 100px;
     height: 25px;
@@ -451,6 +452,7 @@ h1 {
     color: #2E7D32;
     transform: translateY(-3px);
     transition: 0.3s;
+<<<<<<< HEAD
 }
 
 .botaoCarrinho{
@@ -459,4 +461,6 @@ h1 {
     background-color: rgb(255, 230, 0);
     border-radius: 30px;
     border: none;
+=======
+>>>>>>> 11b0fd3ff301dccaf611e482958b1016b4a98736
 }
