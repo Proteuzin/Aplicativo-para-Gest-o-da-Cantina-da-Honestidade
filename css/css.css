@@ -11,7 +11,7 @@ body {
     max-height: 100vh;
 }
 
-img {
+img{
     border-radius: 17px;
 }
 
@@ -118,7 +118,7 @@ img {
     width: 250px;
     background-color: #2E7D32;
     text-align: center;
-    height: 113vh;
+    height: 110vh;
 }
 
 
@@ -152,22 +152,6 @@ img {
     transform: translatey(-10px);
 }
 
-a{
-    text-decoration: none;
-    transform: translateY(-10px);
-    transition: 0.3s ease;
-    border-radius: 15px;
-}
-
-.butaosair {
-    margin-top: 10px;
-
-}
-.link_sair{
-    text-decoration: none;
-    color: #66BB6A;
-}
-
 /* Cabeçalho */
 .cima {
     background-color: white;
@@ -196,47 +180,11 @@ a{
     width: auto;
 }
 
-.pesquisa h3{
+.pesquisa h3,
+h4 {
     color: #66BB6A;
 }
 
-.pesquisa h4{
-     color: #66BB6A;
-}
-.input_search{
-    border-radius: 20px;
-    width: 200px;
-    margin-top: px;
-    padding: 10px 10px 10px 35px;
-    border: none;
-    outline: none;
-}
-.lupa{
-    position: absolute;
-    right: 8px;
-    top: 32%;
-    transform: translateY(-20%);
-    font-size: 20px;
-    z-index: 1;
-    color: #666;
-    border-radius: 100px;
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    border: none;
-}
-.lupa:hover{
-    background-color: lightblue;
-    transition: 0.3s;
-    transform: translateY(-10px);
-}
-.imglupa{
-    margin: 2px;
-}
-.inputPesquisa{
-    position: relative;
-    width: 200px;
-}
 
 /* Área principal */
 .conteudoMeio {
@@ -411,7 +359,6 @@ h1 {
     color: #2E7D32;
     font-size: 40px;
 }
-
 .compraHistorico {
     background-color: whitesmoke;
 }
@@ -440,22 +387,25 @@ h1 {
     border-bottom: lightgrey 1px solid;
 }
 
-.butcard {
+.botaoCarrinho{
+    width: 170px;
+    height: 40px;
+    background-color: rgb(255, 230, 0);
+    border-radius: 30px;
+    border: none;
+    transition: 0.3s ease;
+}
+.botaoCarrinho:hover{
+    transform: translateY(-1px);
+}
+.butcard{
     border-radius: 20px;
     width: 100px;
     height: 25px;
 }
-
-.butcard:hover {
+.butcard:hover{
     color: #2E7D32;
     transform: translateY(-3px);
     transition: 0.3s;
 }
 
-.botaoCarrinho{
-    width: 150px;
-    height: 30px;
-    background-color: rgb(255, 230, 0);
-    border-radius: 30px;
-    border: none;
-}
