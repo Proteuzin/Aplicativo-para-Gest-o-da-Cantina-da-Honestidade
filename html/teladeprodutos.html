@@ -42,7 +42,7 @@
         </div>
 
         <!-- Carteira -->
-        <div class="carteira" id="carteira">
+        <button id="butaocarteira" onclick="some_aparece()"><div class="carteira" id="carteira">
           <div class="imgcarteira" id="imgcarteira">
             <img src="../images/carteira.png" alt="home" />
           </div>
@@ -50,10 +50,10 @@
           <div class="txtcarteira" id="txtcarteira">
             <h4 class="txcarteira">Carteira</h4>
           </div>
-        </div>
+        </div></button>
 
         <!-- Compras -->
-        <div class="Compras" id="Compras">
+        <button class="compras" id="botaocarrinho" onclick="some_aparece()"><div class="Compras" id="Compras">
           <div class="imgCompras" id="imgCompras">
             <img src="../images/carteira.png" alt="home" />
           </div>
@@ -61,7 +61,7 @@
           <div class="txtCompras" id="txtCompras">
             <h4 class="txcompras">Compras</h4>
           </div>
-        </div>
+        </div></button>
 
         <!-- Histórico -->
         <div class="historico" id="historico">
@@ -128,7 +128,10 @@
             <!-- Campo de pesquisa -->
             <div class="inputPesquisa" id="inputPesquisa">
               <button class="lupa"><img src="../images/lupa.png" class="imglupa" width="15px" alt=""></button>
-              <input class="input_search" type="text" name="pesquisar" id="pesquisar" placeholder="Pesquisar..." />
+              <input class="input_search"
+                type="text"
+                name="pesquisar"
+                id="pesquisar" placeholder="Pesquisar..."/>
             </div>
 
           </div>
