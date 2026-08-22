@@ -77,40 +77,6 @@ img {
     color: black;
     transform: translateY(-10px);
 }
-.input_search{
-    border-radius: 20px;
-    width: 200px;
-    margin-top: 10px;
-    padding: 10px 10px 10px 35px;
-    border: none;
-    outline: none;
-}
-.lupa{
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-20%);
-    font-size: 20px;
-    z-index: 1;
-    color: #666;
-    border-radius: 100px;
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    border: none;
-}
-.lupa:hover{
-    background-color: lightblue;
-    transition: 0.3s;
-    transform: translateY(-10px);
-}
-.imglupa{
-    margin: 2px;
-}
-.inputPesquisa{
-    position: relative;
-    width: 200px;
-}
 
 .historico {
 
@@ -257,19 +223,56 @@ h4 {
     justify-content: left;
     padding-left: 50px;
 }
-
+.input_search{
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 35px;
+    border: none;
+    outline: none;
+}
+.lupa{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-20%);
+    font-size: 20px;
+    z-index: 1;
+    color: #666;
+    border-radius: 100px;
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    border: none;
+}
+.lupa:hover{
+    background-color: lightblue;
+    transition: 0.3s;
+    transform: translateY(-10px);
+}
+.imglupa{
+    margin: 2px;
+}
+.inputPesquisa{
+    position: relative;
+    width: 200px;
+}
 
 /* Cards dos produtos */
 .primeiro {
     display: grid;
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
+    width: 100%;
 }
-
+.produtos {
+    width: 100%;
+    min-width: 0;
+}
 .DivCard {
     background-color: rgb(173, 173, 173);
-    width: 220px;
+    width: 100%;
     padding: 13px;
     text-align: center;
     border-radius: 15px;
@@ -441,7 +444,11 @@ h1 {
 .txtCarrinho p {
     padding-top: 5px;
 }
-
+#butaocarteira,#botaocarrinho{
+    background-color: #2E7D32;
+    border: none;
+    font-size: 18px;
+}
 .meiocarrinho {
     margin-top: 60px;
     border-bottom: lightgrey 1px solid;
