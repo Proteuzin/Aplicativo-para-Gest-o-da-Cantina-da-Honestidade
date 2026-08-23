@@ -50,24 +50,44 @@ function card() {
 }
 
 card();
-function some_aparece(){
-  const botao = document.getElementById("butaocarteira")
-  const carteira = document.getElementById("saldo")
-  const botao2 = document.getElementById("botaocarrinho")
-  const carrinho = document.getElementById("carrinho")
+/* Manipulação dos painéis */
+const carteira = document.getElementById("saldo");
+const carrinho = document.getElementById("carrinho");
+const cards = document.getElementById('primeiro');
 
-  botao.addEventListener("click",function(){
-    if (carteira.style.display === "none"){
-      carteira.style.display = "block"
-    }else {
-      carteira.style.display = "none"
-    }
-    botao2.addEventListener("click",function(){
-      if (carrinho.style.display === "none"){
-        carrinho.style.display = "block"
-      }else {
-        carrinho.style.display = "none"
-      }
-    })
-  })
+function atualizarcards() {
+  const carteiraAberta = window.getComputedStyle(carteira).display !== "none";
+  const carrinhoAberto = window.getComputedStyle(carrinho).display !== "none";
+
+  if (carteiraAberta || carrinhoAberto) {
+    cards.classList.add("painel-aberto");
+  } else {
+    cards.classList.remove("painel-aberto");
+  }
+}
+
+function toggleCarteira() {
+  const atual = window.getComputedStyle(carteira).display;
+  /*  Alterna entre flex e none sem interferir no carrinho */
+  carteira.style.display = (atual === "none") ? "flex" : "none";
+  
+  atualizarcards();
+}
+
+function toggleCarrinho() {
+  const atual = window.getComputedStyle(carrinho).display;
+   /* Alterna entre block e none sem interferir na carteira */
+  carrinho.style.display = (atual === "none") ? "block" : "none";
+  
+  atualizarcards();
+}
+/* Função para abrir/fechar o menu lateral e o overlay */
+function traitMenu(){
+  const menu = document.getElementById("lado")
+  const overlay = document.getElementById("overlay")
+
+  if (menu &&  overlay){
+    menu.classList.toggle("ativo")
+    overlay.classList.toggle("ativo")
+  }
 }

@@ -19,12 +19,14 @@
   <!-- Conteúdo inteiro da página -->
   <div class="conteudo" id="conteudo">
 
-    <!-- Menu lateral -->
+    <!-- Menu lateral (Drawer) - TUDO DO MENU FICA AQUI DENTRO -->
     <div class="lado" id="lado">
+      <!-- Botão para fechar o menu -->
+      <button class="btn-fechar" onclick="traitMenu()">&times;</button>
 
       <!-- Logo -->
       <div class="logo" id="logo">
-        <img src="../images/Aug 14, 2026, 03_21_48 PM.png" alt="LOGO" class="logo" id="logo" />
+        <img src="../images/Aug 14, 2026, 03_21_48 PM.png" alt="LOGO" class="logo" />
       </div>
 
       <!-- Ícones/Menu -->
@@ -42,26 +44,30 @@
         </div>
 
         <!-- Carteira -->
-        <button id="butaocarteira" onclick="some_aparece()"><div class="carteira" id="carteira">
-          <div class="imgcarteira" id="imgcarteira">
-            <img src="../images/carteira.png" alt="home" />
-          </div>
+        <button id="butaocarteira" onclick="toggleCarteira()">
+          <div class="carteira" id="carteira">
+            <div class="imgcarteira" id="imgcarteira">
+              <img src="../images/carteira.png" alt="home" />
+            </div>
 
-          <div class="txtcarteira" id="txtcarteira">
-            <h4 class="txcarteira">Carteira</h4>
+            <div class="txtcarteira" id="txtcarteira">
+              <h4 class="txcarteira">Carteira</h4>
+            </div>
           </div>
-        </div></button>
+        </button>
 
         <!-- Compras -->
-        <button class="compras" id="botaocarrinho" onclick="some_aparece()"><div class="Compras" id="Compras">
-          <div class="imgCompras" id="imgCompras">
-            <img src="../images/carteira.png" alt="home" />
-          </div>
+        <button class="compras" id="botaocarrinho" onclick="toggleCarrinho()">
+          <div class="Compras" id="Compras">
+            <div class="imgCompras" id="imgCompras">
+              <img src="../images/carteira.png" alt="home" />
+            </div>
 
-          <div class="txtCompras" id="txtCompras">
-            <h4 class="txcompras">Compras</h4>
+            <div class="txtCompras" id="txtCompras">
+              <h4 class="txcompras">Compras</h4>
+            </div>
           </div>
-        </div></button>
+        </button>
 
         <!-- Histórico -->
         <div class="historico" id="historico">
@@ -70,7 +76,7 @@
           </div>
 
           <div class="txthistorico" id="txthistorico">
-            <h4 class="txhistorico"><a href="./history.html" class="link">Histórico</a></h4>
+            <h4 class="txhistorico"><a href="./historico.html" class="link">Histórico</a></h4>
           </div>
         </div>
 
@@ -80,8 +86,8 @@
             <img src="../images/carteira.png" alt="home" />
           </div>
 
-          <div class="imgPerfil" id="imgPerfil">
-            <h4 class="txperfil">Perfil</h4>
+          <div class="imgPerfil" id="imgPerfilAlt">
+            <h4 class="txperfil"><a href="./perfil.html" class="link">Perfil</a></h4>
           </div>
         </div>
 
@@ -89,27 +95,32 @@
 
       <!-- Sair -->
       <div class="sair" id="sair">
-        <div class="imgSair" id="img/Sair">
-          <img src="../images/carteira.png" alt="home" />
-        </div>
-
-        <div class="txtcarteira" id="txtcarteira">
-          <h4 class="butaosair"><a href="../html/index.html" class="link">Sair</a></h4>
-        </div>
+        <a href="./index.html" class="link-sair">
+          <div class="imgSair" id="imgSair">
+            <img src="../images/carteira.png" alt="Sair" width="24px" height="24px" />
+          </div>
+          <div class="txtSair" id="txtSair">
+            <h4 class="butaosair">Sair</h4>
+          </div>
+        </a>
       </div>
 
-    </div>
+    </div> <!-- FIM DA DIV LADO -->
 
 
-    <!-- Parte direita -->
+    <!-- Parte direita da página -->
     <div class="direita">
 
       <!-- Cabeçalho -->
       <div class="cima" id="cima">
-        <h2>Hello, Student(aqui vai ta o nome do aluno)!</h2>
-        <p>Wellcome back</p>
+        <button id="btnMenu" class="btn-menu" onclick="traitMenu()">
+          &#9776; <!-- Ícone dos 3 traços -->
+        </button>
+        <div>
+          <h2>Hello, Student!</h2>
+          <p>Welcome back</p>
+        </div>
       </div>
-
 
       <!-- Conteúdo principal -->
       <div class="conteudoMeio" id="conteudoMeio">
@@ -121,21 +132,17 @@
           <div class="pesquisa" id="pesquisar">
 
             <div class="textoPesquisa" id="textoPesquisa">
-              <h3>Cátalogo de Produtos</h3>
+              <h3>Catálogo de Produtos</h3>
               <h4>Escolha seus produtos</h4>
             </div>
 
             <!-- Campo de pesquisa -->
             <div class="inputPesquisa" id="inputPesquisa">
               <button class="lupa"><img src="../images/lupa.png" class="imglupa" width="15px" alt=""></button>
-              <input class="input_search"
-                type="text"
-                name="pesquisar"
-                id="pesquisar" placeholder="Pesquisar..."/>
+              <input class="input_search" type="text" name="pesquisar" id="inputPesquisar" placeholder="Pesquisar..." />
             </div>
 
           </div>
-
 
           <!-- Cards dos produtos -->
           <div class="card" id="card">
@@ -144,23 +151,20 @@
 
         </div>
 
+        <!-- Painéis laterais dos produtos -->
+        <div class="direita" id="direitaPainel">
 
-        <div class="direita" id="direita">
           <!-- Carteira -->
           <div class="saldo" id="saldo">
 
-            <!-- Parte de cima da carteira -->
             <div class="cimaSaldo" id="cimaSaldo">
 
-              <!-- Textos do saldo -->
               <div id="textosSaldo" class="textosSaldo">
 
-                <!-- Nome da carteira -->
                 <div class="CarteiraDigital" id="CarteiraDigital">
                   <h2>Carteira Digital</h2>
                 </div>
 
-                <!-- Saldo do usuário -->
                 <div class="saldoUser" id="saldoUser">
                   <h4>Saldo atual</h4>
                   <h2>R$ 13</h2>
@@ -168,56 +172,46 @@
 
               </div>
 
-
-              <!-- Ícone da carteira -->
               <div class="IconeSaldoDIV" id="IconeSaldoDIV">
-
                 <img src="../images/carteira.png" alt="carteira" class="IconeSaldo" id="IconeSaldo" />
-
               </div>
 
             </div>
 
-
-            <!-- Espaço vazio -->
             <div></div>
 
-
-            <!-- Botões -->
             <div class="botoes" id="botoes">
-
-              <!-- Depositar -->
               <button id="depositar" class="depositar">
                 <div class="somaIcone" id="somaIcone">+</div>
                 <div class="depositarTexto" id="depositarTexto">depositar</div>
               </button>
 
-              <!-- Ver extrato -->
               <button class="VerExtrato" id="VerExtrato">
                 Ver Extrato
               </button>
-
             </div>
 
           </div>
 
+          <!-- Carrinho -->
           <div class="carrinho" id="carrinho">
 
             <div class="txtCarrinho" id="txtCarrinho">
               <h2>Carrinho</h2>
               <p>0 itens</p>
             </div>
+
             <div class="meiocarrinho" id="meiocarrinho">
               <p>Seu carrinho esta vazio</p>
-              <small>
-                "Adicione um produto para começar."
-              </small>
+              <small>"Adicione um produto para começar."</small>
             </div>
+
             <div class="baixoCarrinho" id="baixoCarrinho">
-              <div class="textoBaixoCarrinho" id="textoBaixoCarriho">
+              <div class="textoBaixoCarrinho" id="textoBaixoCarrinho">
                 <p>Total da compra</p>
                 <h3>R$ 13,13</h3>
               </div>
+
               <div class="botaoCarrinhoDIV" id="botaoCarrinhoDIV">
                 <button class="botaoCarrinho" id="botaoCarrinho">Finalizar compra</button>
               </div>
@@ -226,11 +220,15 @@
           </div>
 
         </div>
+
       </div>
 
     </div>
 
   </div>
+
+  <!-- Fundo escuro cobrindo a tela quando o menu abre -->
+  <div class="overlay" id="overlay" onclick="traitMenu()"></div>
 
 </body>
 

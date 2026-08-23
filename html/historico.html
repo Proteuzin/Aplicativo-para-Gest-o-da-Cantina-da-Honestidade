@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/favicon.png">
+    <title>Cantina da Bondade - Histórico</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/css.css" />
+
+    <!-- JavaScript -->
+    <script src="../Js/historico.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Conteúdo inteiro da página -->
+    <div class="conteudo" id="conteudo">
+
+        <!-- Menu lateral (Drawer) -->
+        <div class="lado" id="lado">
+            <!-- Botão para fechar o menu -->
+            <button class="btn-fechar" onclick="traitMenu()">&times;</button>
+
+            <!-- Logo -->
+            <div class="logo" id="logo">
+                <img src="../images/Aug 14, 2026, 03_21_48 PM.png" alt="LOGO" class="logo" />
+            </div>
+
+            <!-- Ícones/Menu -->
+            <div class="icons" id="icons">
+
+                <!-- Início -->
+                <div class="inicio" id="inicio">
+                    <div class="imgInicio" id="imgInicio">
+                        <img src="../images/home.png" alt="home" />
+                    </div>
+
+                    <div class="txthome" id="txthome">
+                        <h4 class="txinicio"><a href="./teladeprodutos.html" class="link">Início</a></h4>
+                    </div>
+                </div>
+
+                <!-- Carteira -->
+                <button id="butaocarteira" onclick="toggleCarteira()">
+                    <div class="carteira" id="carteira">
+                        <div class="imgcarteira" id="imgcarteira">
+                            <img src="../images/carteira.png" alt="home" />
+                        </div>
+
+                        <div class="txtcarteira" id="txtcarteira">
+                            <h4 class="txcarteira">Carteira</h4>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Compras -->
+                <button class="compras" id="botaocarrinho" onclick="toggleCarrinho()">
+                    <div class="Compras" id="Compras">
+                        <div class="imgCompras" id="imgCompras">
+                            <img src="../images/carteira.png" alt="home" />
+                        </div>
+
+                        <div class="txtCompras" id="txtCompras">
+                            <h4 class="txcompras">Compras</h4>
+                        </div>
+                    </div>
+                </button>
+
+                <!-- Histórico -->
+                <div class="historico" id="historico">
+                    <div class="imghistorico" id="imghistorico">
+                        <img src="../images/carteira.png" alt="home" />
+                    </div>
+
+                    <div class="txthistorico" id="txthistorico">
+                        <h4 class="txhistorico"><a href="./history.html" class="link">Histórico</a></h4>
+                    </div>
+                </div>
+
+                <!-- Perfil -->
+                <div class="perfil" id="perfil">
+                    <div class="imgPerfil" id="imgPerfil">
+                        <img src="../images/carteira.png" alt="home" />
+                    </div>
+
+                    <div class="imgPerfil" id="imgPerfilAlt">
+                        <h4 class="txperfil"><a href="./perfil.html" class="link">Perfil</a></h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sair -->
+            <div class="sair" id="sair">
+                <a href="./index.html" class="link-sair">
+                    <div class="imgSair" id="imgSair">
+                        <img src="../images/carteira.png" alt="Sair" width="24px" height="24px" />
+                    </div>
+                    <div class="txtSair" id="txtSair">
+                        <h4 class="butaosair">Sair</h4>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Parte direita da página -->
+        <div class="direita">
+
+            <!-- Cabeçalho -->
+            <div class="cima" id="cima">
+                <button id="btnMenu" class="btn-menu" onclick="traitMenu()">
+                    &#9776; <!-- Ícone de 3 traços -->
+                </button>
+                <div>
+                    <h2>Hello, Student!</h2>
+                    <p>Seu histórico de compras</p>
+                </div>
+            </div>
+
+            <!-- Área central com a lista do histórico -->
+            <div class="historico-container">
+
+                <div class="historico-header">
+                    <h3>Compras Recentes</h3>
+                    <p>Acompanhe aqui o status e detalhes dos seus pedidos anteriores.</p>
+                </div>
+
+                <!-- O JavaScript vai injetar os cards aqui dentro da div #historicoLista -->
+                <div class="historico-lista" id="historicoLista"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Fundo escuro cobrindo a tela quando o menu abre -->
+    <div class="overlay" id="overlay" onclick="traitMenu()"></div>
+
+</body>
+
+</html>
