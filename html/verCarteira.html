@@ -33,16 +33,17 @@
       <div class="icons" id="icons">
 
         <!-- Início -->
-         
-        <div class="inicio" id="inicio">
-          <div class="imgInicio" id="imgInicio">
-            <img src="../images/home.png" alt="home" />
-          </div>
+        <a href="../html/teladeprodutos.html">
+          <div class="inicio" id="inicio">
+            <div class="imgInicio" id="imgInicio">
+              <img src="../images/home.png" alt="home" />
+            </div>
 
-          <div class="txthome" id="txthome">
-            <h4 class="txinicio">Inicio</h4>
+            <div class="txthome" id="txthome">
+              <h4 class="txinicio">Inicio</h4>
+            </div>
           </div>
-        </div>
+        </a>
 
         <!-- Carteira -->
         <button id="butaocarteira" onclick="toggleCarteira()">
@@ -118,110 +119,87 @@
           &#9776; <!-- Ícone dos 3 traços -->
         </button>
         <div>
-          <h2>Hello, Student!</h2>
-          <p>Welcome back</p>
+          <h2>Carteira Digital</h2>
+          <p>Gerencie seu saldo, faça depósitos e acompanhe seu extrato</p>
         </div>
       </div>
 
       <!-- Conteúdo principal -->
       <div class="conteudoMeio" id="conteudoMeio">
 
-        <!-- Produtos -->
-        <div class="produtos" id="produtos">
+        <div class="cimaSaldo" id="cimaSaldo">
 
-          <!-- Pesquisa e título -->
-          <div class="pesquisa" id="pesquisar">
-
-            <div class="textoPesquisa" id="textoPesquisa">
-              <h3>Catálogo de Produtos</h3>
-              <h4>Escolha seus produtos</h4>
-            </div>
-
-            <!-- Campo de pesquisa -->
-            <div class="inputPesquisa" id="inputPesquisa">
-              <button class="lupa"><img src="../images/lupa.png" class="imglupa" width="15px" alt=""></button>
-              <input class="input_search" type="text" name="pesquisar" id="inputPesquisar" placeholder="Pesquisar..." />
-            </div>
-
+          <div class="textoSaldoCima" id="textoSaldoCima">
+            <h3>Saldo atual</h3>
+            <h1>R$ 13,00</h1>
           </div>
 
-          <!-- Cards dos produtos -->
-          <div class="card" id="card">
-            <div class="primeiro" id="primeiro"></div>
+          <div class="imgSaldoCima" id="imgSaldoCima">
+            <img src="../images/carteira.png" alt="carteira" class="imgSaldo" id="imgSaldo" />
           </div>
 
         </div>
 
-        <!-- Painéis laterais dos produtos -->
-        <div class="direita" id="direitaPainel">
+        <div class="baixoCarteira" id="baixoCarteira">
 
-          <!-- Carteira -->
-          <div class="saldo" id="saldo">
+          <div class="depositarPG2" id="depositarPG2">
 
-            <div class="cimaSaldo" id="cimaSaldo">
-
-              <div id="textosSaldo" class="textosSaldo">
-
-                <div class="CarteiraDigital" id="CarteiraDigital">
-                  <h2>Carteira Digital</h2>
+            <div class="inputs" id="inputs">
+              <div class="cimaDepositarPG2" id="cimaDepositarPG2">
+                <div class="iconeDepositarPG2" id="iconeDepositarPG2">
+                  <img src="../images/carteira.png" alt="carteira" class="imgDepositar" id="imgDepositar">
                 </div>
-
-                <div class="saldoUser" id="saldoUser">
-                  <h4>Saldo atual</h4>
-                  <h2>R$ 13</h2>
+                <div class="textoDepositarPG2" id="textoDepositarPG2">
+                  <h3>Depósito</h3>
                 </div>
-
+              </div>
+              <div class="valorDepositar" id="valorDepositar">
+                <label for="inputDepositar" class="labelDepositar">Valor</label>
+                <input type="text" placeholder="R$ 13,00" class="inputDepositar" id="inputDepositar" step="0.01" />
               </div>
 
-              <div class="IconeSaldoDIV" id="IconeSaldoDIV">
-                <img src="../images/carteira.png" alt="carteira" class="IconeSaldo" id="IconeSaldo" />
+              <div class="metodoPagamento" id="metodoPagamento">
+                <label for="selectPagamento" class="labelPagamento">Método de Pagamento</label>
+                <select class="selectPagamento" id="selectPagamento">
+                  <option value="pix">PIX</option>
+                  <option value="cartaoDebito">Débito</option>
+                  <option value="cartaoCredito">Crédito</option>
+                  <option value="boleto">Boleto</option>
+                </select>
               </div>
 
-            </div>
-
-            <div></div>
-
-            <a href="../html/verCarteira.html">
-            <div class="botoes" id="botoes">
-              <button id="depositar" class="depositar">
-                <div class="depositarTexto" id="depositarTexto">Ver carteira</div>
-              </button>
-            </div>
-            </a>
-
-          </div>
-
-          <!-- Carrinho -->
-          <div class="carrinho" id="carrinho">
-
-            <div class="txtCarrinho" id="txtCarrinho">
-              <h2>Carrinho</h2>
-              <p>0 itens</p>
-            </div>
-
-            <div class="meiocarrinho" id="meiocarrinho">
-              <p>Seu carrinho esta vazio</p>
-              <small>"Adicione um produto para começar."</small>
-            </div>
-
-            <div class="baixoCarrinho" id="baixoCarrinho">
-              <div class="textoBaixoCarrinho" id="textoBaixoCarrinho">
-                <p>Total da compra</p>
-                <h3>R$ 13,13</h3>
-              </div>
-
-              <div class="botaoCarrinhoDIV" id="botaoCarrinhoDIV">
-                <button class="botaoCarrinho" id="botaoCarrinho">Finalizar compra</button>
+              <div class="botaoDepositarB" id="botaoDepositarB">
+                <button class="depositarB" id="depositarB">Depositar</button>
               </div>
             </div>
 
           </div>
 
+          <div class="extrato" id="extrato">
+            <div class="cimaDepositarPG2" id="cimaDepositarPG2">
+              <div class="iconeDepositarPG2" id="iconeDepositarPG2">
+                <img src="../images/carteira.png" alt="carteira" class="imgDepositar" id="imgDepositar">
+              </div>
+              <div class="textoDepositarPG2" id="textoDepositarPG2">
+                <h3>Extrato</h3>
+              </div>
+            </div>
+
+            <div class="extratos" id="extratos">
+            </div>
+          </div>
         </div>
 
       </div>
 
     </div>
+
+
+  </div>
+
+  </div>
+
+  </div>
 
   </div>
 
