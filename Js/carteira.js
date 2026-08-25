@@ -110,3 +110,10 @@ function extrato() {
   }
 }
 extrato();
+
+
+function depositar(){
+    let valor = Number(document.getElementById("inputDepositar").value.replace(",", "."));
+
+    window.alert(`Depósito de R$ ${valor} realizado com sucesso!`)
+}
